@@ -8,7 +8,8 @@ const PORT = 4000;
 app.get('/', (req, res) => res.send('Go to /graphl to start playground'));
 
 app.use('/graphql', graphqlHTTP({
-  schema
+  schema,
+  graphiql: true,
 }));
 
 app.listen(PORT, () => {
