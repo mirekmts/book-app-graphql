@@ -38,20 +38,20 @@ class AddBook extends Component {
   render() {
     return (
       <form onSubmit={this.onFormSubmit}>
-        <div className="filed">
+        <div className="field">
           <label htmlFor="name">Book name:</label>
           <input required id="name" name="name" type="text" value={this.state.name} onChange={this.onInputChange}/>
         </div>
 
-        <div className="filed">
+        <div className="field">
           <label htmlFor="genre">Genre:</label>
           <input required id="genre" name="genre" type="text" value={this.state.genre} onChange={this.onInputChange}/>
         </div>
 
-        <div className="filed">
+        <div className="field">
           <label htmlFor="authorId">Author:</label>
           <select required id="author" name="authorId" value={this.state.authorId} onChange={this.onInputChange}>
-            <option value="" disabled selected hidden>Select author</option>
+            <option value="" disabled hidden>Select author</option>
             {this.displayAuthors()}
           </select>
         </div>
