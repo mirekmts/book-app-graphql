@@ -1,13 +1,16 @@
 body {
   background: #eee;
   font-family: "Arial";
+  margin: 0;
 }
 
 .App {
-  padding: 0;
+  padding: 10px 10px 0 10px;
   box-sizing: border-box;
   width: 60%;
-  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .App h1 {
@@ -33,10 +36,7 @@ body {
 form {
   background: #fff;
   padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 400px;
+  position: relative;
 }
 
 form .field {
@@ -88,4 +88,27 @@ form button {
   box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
   box-sizing: border-box;
   color: #fff;
+}
+
+.tabs {
+  width: 400px;
+}
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
 }
