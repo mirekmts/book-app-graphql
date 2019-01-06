@@ -39,7 +39,7 @@ class AddBook extends Component {
     return (
       <form onSubmit={this.onFormSubmit}>
         <div className="field">
-          <label htmlFor="name">Book name:</label>
+          <label htmlFor="name">Title:</label>
           <input required id="name" name="name" type="text" value={this.state.name} onChange={this.onInputChange}/>
         </div>
 
